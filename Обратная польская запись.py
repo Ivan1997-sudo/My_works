@@ -3,7 +3,7 @@ class Stack:
         self.items: list = []
 
     def peek(self) -> str or int or float:
-        if len(self.items) == 0:
+        if not self.items:
             return "Вводимая строка пуста"
         if len(self.items) > 1:
             return "Недостаточно операторов"
