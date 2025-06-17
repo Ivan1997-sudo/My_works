@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):
         self.items: list = []
 
-    def peek(self) -> str or int or float:
+    def peek(self) -> str | int | float:
         if not self.items:
             return "Вводимая строка пуста"
         if len(self.items) > 1:
@@ -22,7 +22,7 @@ class Stack:
         except ZeroDivisionError:
             print("Делить на 0 нельзя")
 
-def expression(stack, example: str) -> int or str:
+def expression(stack, example: str) -> int | str:
     for i in example.split():
         if i not in "+, -, *, /":
             stack.push(float(i))
