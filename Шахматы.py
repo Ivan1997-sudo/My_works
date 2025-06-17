@@ -1,8 +1,5 @@
 from abc import ABC, abstractmethod
 
-from mypy.message_registry import TYPE_ALWAYS_TRUE
-
-
 class ChessPiece (ABC):
     """
     Создание абстрактного класса, которые включает в себя общие методы для шахматных фигур
